@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="It is simple todolist." />
+    <script src="javascript/modal.js" defer></script>
+    <script src="javascript/app.js" defer></script>
+    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <main class="todo-list">
+      <!-- 기본적으로 보여지는 화면 -->
+      <div class="header-section">
+        <h1>Todo List</h1>
+        <button class="btn add-btn">일정 추가하기</button>
+      </div>
+      <div class="back-drop"></div>
+
+      <!-- modal 창 -->
+      <div class="modal">
+        <h2>일정을 추가하세요.</h2>
+        <input
+          type="text"
+          placeholder=" 10시에 운동가기."
+          class="todo-input"
+        />
+        <button class="btn confirm">확인</button
+        ><button class="btn cancel" style="margin-left: 2px;">취소</button>
+      </div>
+      
+      <!-- 추가될 todo-list item들 -->
+      <div>
+        <ol class="list-wrapper">
+        </ol>
+      </div>
+    </main>
+  </body>
+</html>
